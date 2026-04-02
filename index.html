@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shiel Loganadan | MPRTSM ePortfolio</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --text: #1f2937;
+      --muted: #5b6472;
+      --card: #ffffff;
+      --accent: #1f4e79;
+      --accent-dark: #12324d;
+      --accent-soft: #e8f0f8;
+      --border: #d9e1ea;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: auto;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--accent-dark), var(--accent));
+      color: white;
+      padding: 56px 20px 40px;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.98);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(6px);
+    }
+
+    .nav-wrap {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 28px 20px 52px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2.45rem;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      color: var(--accent);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 8px;
+      font-size: 1.65rem;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      color: #163a59;
+      font-size: 1.15rem;
+    }
+
+    .subtitle {
+      font-size: 1.08rem;
+      max-width: 920px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 4px 16px rgba(16, 24, 40, 0.05);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .artifact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      gap: 16px;
+    }
+
+    .artifact {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 4px 16px rgba(16, 24, 40, 0.05);
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      background: var(--accent-soft);
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .resume-box {
+      border: 1px dashed var(--accent);
+      border-radius: 14px;
+      padding: 18px;
+      background: #f9fbfd;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    ul {
+      margin-top: 8px;
+      padding-left: 20px;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .button.secondary {
+      background: #edf3f9;
+      color: var(--accent);
+      border: 1px solid var(--border);
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+
+    @media (max-width: 860px) {
+      h1 { font-size: 2rem; }
+      .two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Shiel Loganadan</h1>
+      <p class="subtitle"><strong>Master’s in Parks, Recreation, Tourism and Sport Management (MPRTSM)</strong></p>
+      <p class="subtitle">
+        I am pursuing a professional path in parks, recreation, tourism, and sport management with interests in
+        facility planning, public-sector recreation systems, destination development, community engagement,
+        and operational strategy. This portfolio presents selected graduate work that demonstrates how I assess
+        systems, translate research into recommendations, support participant-centered experiences, and connect
+        planning decisions to long-term organizational performance.
+      </p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-wrap">
+      <a href="#intro">Introduction</a>
+      <a href="#resume">Resume</a>
+      <a href="#domains">Domains</a>
+      <a href="#assessment">Assessment & Planning</a>
+      <a href="#strategy">Benchmarking & Strategy</a>
+      <a href="#engagement">Engagement & Input</a>
+      <a href="#tourism">Tourism & Microentrepreneurship</a>
+      <a href="#reflection">Final Reflection</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="intro" class="card">
+      <h2>Professional Introduction</h2>
+      <p>
+        My name is Shiel Loganadan and I am completing my coursework for a Master’s in Parks, Recreation, Tourism and Sport Management.
+        My career direction is centered on work that combines public recreation, tourism, operations, and planning. I am especially
+        interested in roles where I can help organizations improve facilities, coordinate programs and events, engage communities,
+        and build systems that are both effective and equitable.
+      </p>
+      <p>
+        Across the MPRTSM program, I have completed applied projects related to park and facility planning, benchmarking, public input,
+        tourism development, microentrepreneurship, and strategic recommendations. These assignments helped me move beyond theory and
+        practice how organizations diagnose problems, assess service gaps, and make decisions that affect both operations and user experience.
+        My work consistently reflects interests in analysis, structure, community responsiveness, and the long-term value that recreation
+        and tourism systems can create.
+      </p>
+      <p>
+        I bring value through organization, critical thinking, written communication, and the ability to connect detailed analysis to larger
+        professional goals. I pay close attention to how systems are designed, how people experience them, and how improvements can be made
+        in ways that are realistic and actionable. This portfolio is organized by professional competency rather than by course number so that
+        employers can more easily understand how my academic work translates into transferable skills and professional readiness.
+      </p>
+    </section>
+
+    <section id="resume" class="card">
+      <h2>Resume</h2>
+      <div class="resume-box">
+        <div class="two-col">
+          <div>
+            <h3>Shiel Loganadan</h3>
+            <p>Naples, Florida</p>
+            <p><strong>Career Interests:</strong> Parks and Recreation Planning, Tourism Development, Facility Operations, Community Engagement, Strategic Analysis</p>
+
+            <h3>Education</h3>
+            <p><strong>Master’s in Parks, Recreation, Tourism and Sport Management</strong><br />
+            In progress</p>
+
+            <h3>Core Competencies</h3>
+            <ul>
+              <li>Facility and program planning</li>
+              <li>Level of service and benchmarking analysis</li>
+              <li>Community engagement and public input design</li>
+              <li>Tourism systems thinking and destination analysis</li>
+              <li>Professional writing and strategic recommendations</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Selected Applied Experience</h3>
+            <ul>
+              <li>Developed a strategic execution and resilience enhancement plan for the City of Naples Parks & Recreation Department</li>
+              <li>Completed system inventory, benchmarking, and walkable access analysis for a public recreation system</li>
+              <li>Designed a community input plan and engagement event structure for parks and recreation planning</li>
+              <li>Analyzed destination development and microentrepreneur opportunities through multiple tourism assignments</li>
+              <li>Produced applied projects in public planning, tourism development, and performance-based recommendations</li>
+            </ul>
+
+            <h3>Professional Strengths</h3>
+            <ul>
+              <li>Organization and attention to detail</li>
+              <li>Analytical thinking and problem solving</li>
+              <li>Professional communication</li>
+              <li>Ability to connect research to practice</li>
+            </ul>
+          </div>
+        </div>
+        <p class="small">
+          This resume section is embedded as text to provide immediate access within the portfolio while maintaining a clear professional summary.
+        </p>
+      </div>
+    </section>
+
+    <section id="domains" class="card">
+      <h2>Portfolio Structure: Professional Competency Domains</h2>
+      <div class="grid">
+        <div>
+          <h3>System Assessment and Facility Planning</h3>
+          <p>
+            This domain highlights work related to inventories, existing conditions, service distribution, and the physical planning of
+            public recreation systems. The artifacts in this section show how I assess what exists, identify gaps, and frame planning
+            challenges in ways that support future decisions.
+          </p>
+        </div>
+        <div>
+          <h3>Benchmarking, Strategy, and Recommendations</h3>
+          <p>
+            This domain focuses on analysis, level of service, benchmarking, and organizational recommendations. The selected artifacts
+            demonstrate how I use external standards and internal findings to support strategic thinking and performance-based planning.
+          </p>
+        </div>
+        <div>
+          <h3>Community Engagement and Public Input</h3>
+          <p>
+            This domain captures my work related to stakeholder involvement, equitable participation, and community-responsive planning.
+            The artifacts reflect how public input can strengthen both legitimacy and practical decision-making.
+          </p>
+        </div>
+        <div>
+          <h3>Tourism Development and Microentrepreneur Support</h3>
+          <p>
+            This domain presents work focused on destination development, permatourism, tourism impacts, and small business participation
+            in tourism systems. These artifacts demonstrate my ability to analyze how tourism can be shaped to support both visitors and
+            destination communities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="assessment">
+      <h2>System Assessment and Facility Planning</h2>
+      <div class="artifact-grid">
+        <article class="artifact">
+          <span class="pill">PRT 595</span>
+          <h3>Existing Conditions & Inventory + TPL ParkServe</h3>
+          <p><strong>Context:</strong> This artifact documented the existing park and recreation inventory for the City of Naples and incorporated ParkServe-based access analysis to identify conditions, amenities, and service distribution patterns.</p>
+          <p><strong>My Role:</strong> I independently compiled the inventory, interpreted access data, and organized the findings into a planning-oriented assessment.</p>
+          <p><strong>Skills Demonstrated:</strong> System inventory, spatial thinking, access analysis, data organization, public-sector planning.</p>
+          <p><strong>Reflection:</strong> This artifact strengthened my ability to start planning work from evidence rather than assumptions. It required me to interpret what an inventory reveals about a system’s strengths and inequities, especially in relation to neighborhood access and amenity distribution. Professionally, it reflects my ability to organize baseline information in a way that supports more strategic conversations later in the planning process.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan PRT 595 Existing Conditions & Inventory + TPL ParkServe.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+
+        <article class="artifact">
+          <span class="pill">PRT 595</span>
+          <h3>Program & Facility Planning</h3>
+          <p><strong>Context:</strong> This assignment identified a geographic gap east of Goodlette-Frank Road in Naples and connected that gap to level of service measures and community equity concerns.</p>
+          <p><strong>My Role:</strong> I independently analyzed the gap, interpreted local conditions, and proposed how LOS and KPIs could be used to monitor progress.</p>
+          <p><strong>Skills Demonstrated:</strong> Facility planning, equity analysis, LOS thinking, problem framing, applied planning logic.</p>
+          <p><strong>Reflection:</strong> This artifact demonstrates growth in how I define a problem in planning terms. Rather than simply stating that a gap exists, I had to explain why it matters, who it affects, and how it can be measured over time. The assignment helped me better connect physical distribution, service equity, and operational responsibility in a way that feels highly transferable to public recreation work.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan PRT 595 Program & Facility Planning.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+
+        <article class="artifact">
+          <span class="pill">PRT 595</span>
+          <h3>Agency Project Brief Executive Summary</h3>
+          <p><strong>Context:</strong> This brief introduced the City of Naples Parks and Recreation Department’s strategic execution and resilience enhancement plan, focusing on seasonal demand, coastal exposure, staffing constraints, and long-term sustainability.</p>
+          <p><strong>My Role:</strong> I independently prepared the summary and framed the organizational need for the larger project.</p>
+          <p><strong>Skills Demonstrated:</strong> Executive writing, concise framing, public-sector context analysis, organizational communication.</p>
+          <p><strong>Reflection:</strong> This artifact improved my ability to write for decision-makers. The main challenge was presenting a complex organizational situation in a concise way without losing important context. That skill is directly transferable to professional settings where leaders need short, clear documents that explain why an issue matters and what direction should follow.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan PRT 595 Agency Project Brief Executive Summary.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+
+        <article class="artifact">
+          <span class="pill">PRT 595</span>
+          <h3>Case Study Comprehensive Plan Review</h3>
+          <p><strong>Context:</strong> This artifact reviewed and analyzed a recent parks and recreation master plan RFP to identify strengths in scope, engagement design, benchmarking, and implementation structure.</p>
+          <p><strong>My Role:</strong> I independently analyzed the planning document and evaluated its relevance to comprehensive public recreation planning.</p>
+          <p><strong>Skills Demonstrated:</strong> Plan review, critical analysis, public planning interpretation, implementation awareness.</p>
+          <p><strong>Reflection:</strong> This artifact helped me evaluate what strong planning documents look like before a final plan is even produced. It improved my understanding of scope design, sequencing, and why implementation components matter just as much as visioning. Professionally, it shows that I can critique planning frameworks and identify the design features that make them more actionable and accountable.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan PRT 595 Case Study Comprehensive Plan.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="strategy">
+      <h2>Benchmarking, Strategy, and Recommendations</h2>
+      <div class="artifact-grid">
+        <article class="artifact">
+          <span class="pill">PRT 595</span>
+          <h3>Identifying Sources for LOS Benchmarking</h3>
+          <p><strong>Context:</strong> This artifact evaluated national benchmarking resources such as NRPA Park Metrics and TPL ParkServe for use in assessing the City of Naples park and recreation system.</p>
+          <p><strong>My Role:</strong> I independently identified, compared, and justified the data sources and their relevance to the project.</p>
+          <p><strong>Skills Demonstrated:</strong> Source evaluation, benchmarking logic, public agency analysis, research-to-practice translation.</p>
+          <p><strong>Reflection:</strong> This work sharpened my ability to select tools intentionally rather than using data simply because it is available. It required me to think critically about what makes a benchmarking source useful, credible, and applicable. Professionally, that matters because good recommendations depend on selecting evidence that genuinely fits the organization and its context.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan PRT 595 Identifying Sources for LOS Benchmarking.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+
+        <article class="artifact">
+          <span class="pill">PRT 595</span>
+          <h3>Benchmarking to Recommendations</h3>
+          <p><strong>Context:</strong> This assignment translated benchmark measures into ideal conditions, current Naples conditions, and clearly defined gaps related to access, ADA compliance, and greenway mileage.</p>
+          <p><strong>My Role:</strong> I independently compared target measures and current LOS findings, then connected those gaps to actionable planning concerns.</p>
+          <p><strong>Skills Demonstrated:</strong> Comparative analysis, benchmarking interpretation, measurable recommendation development, strategic reasoning.</p>
+          <p><strong>Reflection:</strong> This artifact helped me move from analysis to action. It was not enough to identify what Naples lacked; I also had to show how benchmarks could support practical recommendations. That process reflects an important professional skill: using standards not as abstract metrics, but as tools that guide resource allocation and policy decisions.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan PRT 595 Benchmarking to Recommendations.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+
+        <article class="artifact">
+          <span class="pill">PRT 595</span>
+          <h3>Final Assignment: Strategic Execution and Resilience Enhancement Plan</h3>
+          <p><strong>Context:</strong> This final planning document synthesized inventory, LOS, equity findings, climate resilience concerns, and workforce issues into a citywide strategic execution and resilience enhancement plan for Naples Parks & Recreation.</p>
+          <p><strong>My Role:</strong> I independently integrated prior analyses and recommendations into the final plan.</p>
+          <p><strong>Skills Demonstrated:</strong> Strategic synthesis, public-sector planning, resilience thinking, policy framing, long-form professional writing.</p>
+          <p><strong>Reflection:</strong> This artifact best represents my ability to synthesize multiple strands of information into one coherent planning narrative. It reflects growth in organizing large projects, connecting evidence across assignments, and maintaining a professional tone while discussing equity, resilience, and organizational performance. The most transferable lesson was learning how to build a final recommendation from layered analysis rather than isolated observations.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan PRT 595 Final Assignment.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+
+        <article class="artifact">
+          <span class="pill">PRT 506</span>
+          <h3>Final Paper: City of Naples Parks and Recreation Department</h3>
+          <p><strong>Context:</strong> This paper diagnosed and reframed a city parks and recreation department by connecting organizational behavior, mission alignment, performance indicators, and future-ready management practice.</p>
+          <p><strong>My Role:</strong> I independently researched, structured, and wrote the paper.</p>
+          <p><strong>Skills Demonstrated:</strong> Organizational analysis, leadership thinking, mission alignment, synthesis of research and practice.</p>
+          <p><strong>Reflection:</strong> This artifact expanded my understanding of how management challenges are not only operational, but also organizational and cultural. It pushed me to think about how strategy, mission, performance, and leadership interact over time. That broader systems perspective is professionally valuable because it helps me see recreation organizations as institutions that need alignment as much as they need programs and facilities.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan - Final Paper - City of Naples Parks and Recreation Department - vFinal.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="engagement">
+      <h2>Community Engagement and Public Input</h2>
+      <div class="artifact-grid">
+        <article class="artifact">
+          <span class="pill">PRT 595</span>
+          <h3>Community Input Plan Updated</h3>
+          <p><strong>Context:</strong> This artifact designed a pop-up community park input event for Naples to collect resident, visitor, and workforce feedback on park services, amenities, and climate resilience concerns.</p>
+          <p><strong>My Role:</strong> I independently developed the event structure, activities, audiences, and expected outcomes.</p>
+          <p><strong>Skills Demonstrated:</strong> Stakeholder engagement, public input design, accessibility planning, community-responsive facilitation.</p>
+          <p><strong>Reflection:</strong> This artifact demonstrates that planning is not only technical but participatory. I had to think about who should be included, how to make engagement accessible, and how to gather useful input efficiently. That reflects a professional mindset of designing participation intentionally rather than treating public input as a formality.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan PRT 595 Community Input Plan Updated.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tourism">
+      <h2>Tourism Development and Microentrepreneur Support</h2>
+      <div class="artifact-grid">
+        <article class="artifact">
+          <span class="pill">A2</span>
+          <h3>Microentrepreneur Case Study</h3>
+          <p><strong>Context:</strong> This field-based case study documented a tourism microentrepreneur experience in Naples, focusing on observations, booking processes, assets, needs, and a possible accompaniment plan.</p>
+          <p><strong>My Role:</strong> I booked the experience, conducted the observation, documented field notes, and analyzed the business.</p>
+          <p><strong>Skills Demonstrated:</strong> Participant observation, small business analysis, service critique, professional reflection, applied tourism understanding.</p>
+          <p><strong>Reflection:</strong> This artifact is important because it moved me closer to direct engagement with a tourism operator rather than abstract destination analysis. It strengthened my ability to observe how the design of an experience, the booking process, and the entrepreneur’s capacity all shape the visitor product. It also taught me to think more carefully about mentorship and support in practical terms.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan A2 Microentrepreneur Case Study.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+
+        <article class="artifact">
+          <span class="pill">A3</span>
+          <h3>Oral History of a Tourism Microentrepreneur</h3>
+          <p><strong>Context:</strong> This oral history documented the professional story of Captain Mike Reynolds of Naples Coastal Fishing Charters, including his motivations, challenges, and development as a tourism microentrepreneur.</p>
+          <p><strong>My Role:</strong> I conducted the interview and structured the oral history narrative.</p>
+          <p><strong>Skills Demonstrated:</strong> Interviewing, narrative construction, listening, qualitative interpretation, tourism entrepreneurship analysis.</p>
+          <p><strong>Reflection:</strong> This artifact helped me understand tourism entrepreneurship as a lived experience rather than only a business model. Listening to a business owner describe motivation, seasonality, and independence gave me a more human understanding of what makes microentrepreneurship both appealing and difficult. That perspective is professionally valuable because it supports more thoughtful, person-centered planning.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan A3 Oral History of a tourism microentrepreneur.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+
+        <article class="artifact">
+          <span class="pill">A4</span>
+          <h3>IT4Dev Assignment</h3>
+          <p><strong>Context:</strong> This assignment used Google Maps, user-generated reviews, and platform-based listings to examine how information technology can help direct tourism attention toward local businesses and less commercialized attractions in Las Vegas.</p>
+          <p><strong>My Role:</strong> I created the map, reviewed local guide content, and built a sample listing concept.</p>
+          <p><strong>Skills Demonstrated:</strong> Digital tourism analysis, platform literacy, destination promotion, interpretation of user-generated content.</p>
+          <p><strong>Reflection:</strong> This artifact demonstrates how digital tools influence who benefits from tourism visibility. It pushed me to think about technology not only as a marketing tool, but also as a mechanism that can either reinforce concentration or widen participation. The transferable skill here is understanding how digital platforms shape access, promotion, and consumer decision-making.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan A4 IT4Dev Assignment.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+
+        <article class="artifact">
+          <span class="pill">A5</span>
+          <h3>Eventbrite Partnership Event</h3>
+          <p><strong>Context:</strong> This project designed a partnership event in Las Vegas between a food microentrepreneur and a hospitality partner to create a community-based culinary tourism experience.</p>
+          <p><strong>My Role:</strong> I designed the partnership model, event concept, pricing, and mutual benefit structure.</p>
+          <p><strong>Skills Demonstrated:</strong> Partnership design, event planning, tourism product development, win-win stakeholder thinking.</p>
+          <p><strong>Reflection:</strong> This artifact reflects my ability to think creatively about how tourism experiences can be structured to benefit multiple partners instead of only one operator. It demonstrates strategic thinking around collaboration, audience development, and small-business visibility. Professionally, it shows that I can design tourism products that support both economic value and local participation.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan A5 Eventbrite partnership event.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+
+        <article class="artifact">
+          <span class="pill">A6</span>
+          <h3>Economic Impact of Tourism Assignment</h3>
+          <p><strong>Context:</strong> This assignment analyzed tourism’s economic impact at the state, county, and comparative destination levels, including North Carolina, Wake County, and Las Vegas/Clark County.</p>
+          <p><strong>My Role:</strong> I independently researched and compared tourism spending, jobs, tax revenue, and recovery patterns.</p>
+          <p><strong>Skills Demonstrated:</strong> Economic interpretation, comparative analysis, destination evaluation, policy awareness.</p>
+          <p><strong>Reflection:</strong> This artifact strengthened my ability to interpret tourism economically rather than just experientially. It showed me how tourism affects public revenue, labor, and destination strategy at different scales. The professional value of this assignment lies in better understanding how economic evidence can support planning, investment, and policy choices.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan A6 Economic impact of tourism assignment.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+
+        <article class="artifact">
+          <span class="pill">A7</span>
+          <h3>Permatourism Destination Audit</h3>
+          <p><strong>Context:</strong> This destination audit evaluated Las Vegas through a Permatourism lens, assessing brand, system integration, microentrepreneur visibility, and local participation in the tourism economy.</p>
+          <p><strong>My Role:</strong> I independently assessed the destination and developed recommendations for a more equitable and locally integrated tourism system.</p>
+          <p><strong>Skills Demonstrated:</strong> Destination audit, systems thinking, critical tourism analysis, recommendation development.</p>
+          <p><strong>Reflection:</strong> This artifact is one of the clearest examples of my ability to evaluate a destination critically rather than accept tourism success at face value. It required me to look at who benefits, who is left out, and how destination systems can be adjusted to support more equitable outcomes. That analytical lens is highly transferable to tourism planning, policy, and destination management work.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan A7 Permatourism Destination Audit.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+
+        <article class="artifact">
+          <span class="pill">A1</span>
+          <h3>Permatourism Weekend Package Assignment Part A</h3>
+          <p><strong>Context:</strong> This artifact developed the public-facing presentation of a Las Vegas weekend package designed around Permatourism principles, emphasizing local culture, outdoor recreation, food, and community-based experiences.</p>
+          <p><strong>My Role:</strong> I independently designed the concept, itinerary, and visitor-facing presentation.</p>
+          <p><strong>Skills Demonstrated:</strong> Tourism product design, itinerary development, audience communication, experience framing.</p>
+          <p><strong>Reflection:</strong> This artifact shows how planning ideas can be translated into a visitor product that is both appealing and intentional. It helped me think about how destination experiences are communicated, not just designed. Professionally, it demonstrates my ability to present an idea in a format that is accessible, clear, and market-aware.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan A1 Permatourism Weekend Package Assignment Part A.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+
+        <article class="artifact">
+          <span class="pill">A1</span>
+          <h3>Permatourism Weekend Package Assignment Part B</h3>
+          <p><strong>Context:</strong> This companion artifact outlined stakeholder zones, partnership roles, and pricing structures to support the weekend package as an integrated tourism system.</p>
+          <p><strong>My Role:</strong> I independently identified stakeholders, pricing logic, and the partnership framework.</p>
+          <p><strong>Skills Demonstrated:</strong> Stakeholder mapping, pricing logic, integrated systems thinking, tourism partnership analysis.</p>
+          <p><strong>Reflection:</strong> This artifact demonstrates how destination experiences can be intentionally structured to distribute benefits more broadly. It moved me from discussing Permatourism as a concept to applying it through partner roles, system zones, and economic structure. The professional lesson here was learning how a visitor product can also function as a planning and collaboration tool.</p>
+          <div class="button-row">
+            <a class="button secondary" href="Shiel Loganadan A1 Permatourism Weekend Package Assignment Part B.pdf" target="_blank" download>View / Download Artifact</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="reflection" class="card">
+      <h2>Final Program-Level Reflection</h2>
+      <p>
+        Completing the MPRTSM program has helped me move from a broad interest in parks, recreation, tourism, and sport management
+        toward a more defined professional identity built around planning, analysis, and systems thinking. Looking across the artifacts
+        in this portfolio, the clearest sign of growth is that I no longer see assignments as isolated classroom products. Instead, I now
+        see them as different ways of approaching the same professional challenge: understanding how organizations and destinations work,
+        who they serve well, where they fall short, and how they can improve.
+      </p>
+      <p>
+        One of the strongest patterns in my work is an increasing ability to connect evidence to action. In the Naples parks and recreation
+        projects, I worked through inventory, existing conditions, access gaps, benchmarking sources, LOS measures, community input design,
+        and final recommendations. Those assignments taught me that planning is a layered process. Before making recommendations, I needed
+        to understand what existed, what standards mattered, what inequities were present, and how residents and stakeholders experienced
+        the system. That process strengthened my ability to move from diagnosis to strategy, which I now see as one of my most important
+        professional skills.
+      </p>
+      <p>
+        Another major area of growth has been understanding the relationship between public service systems and the people who rely on them.
+        Through projects related to community engagement and tourism microentrepreneurs, I became more aware that organizations do not simply
+        provide services in a vacuum. They operate within communities that have different levels of access, visibility, voice, and power.
+        The community input plan and oral history assignments especially pushed me to think more intentionally about participation and lived
+        experience. They helped me understand that effective planning is not only technical, but also relational. Whether the context is a
+        public park system or a tourism business, meaningful improvement depends on understanding how people actually experience the system.
+      </p>
+      <p>
+        The tourism-related assignments also expanded my thinking beyond traditional destination promotion. Through the permatourism audit,
+        weekend package, Eventbrite partnership concept, and IT4Dev work, I learned to evaluate tourism systems critically. Rather than
+        asking only whether a destination is successful, I began asking who benefits from that success, how local businesses are positioned,
+        and what role policy, marketing, and digital platforms play in shaping access to opportunity. That shift matters to my professional
+        identity because it reinforced my interest in development that is not only effective, but also equitable and community-conscious.
+      </p>
+      <p>
+        I also grew in my confidence as a professional communicator. Across both groups of coursework, I had to write executive-style
+        summaries, strategic recommendations, planning documents, and reflective analyses. Over time I became more comfortable organizing
+        complex information, identifying what matters most, and writing in a way that is direct, professional, and useful. This is one of
+        the most transferable skills I gained because strong communication supports nearly every aspect of parks, recreation, tourism, and
+        sport management work.
+      </p>
+      <p>
+        At the same time, this portfolio process has helped me identify areas for continued development. One of those areas is continuing
+        to refine how I present academic work as professional-facing material. The assignments gave me strong content, but building this
+        portfolio showed me that reflection and framing are just as important as the artifacts themselves. I want to continue improving how
+        I communicate my role, how I highlight transferable skills, and how I show employers not only what I completed, but what I learned
+        and how I would apply it in practice.
+      </p>
+      <p>
+        Overall, the program has shaped me into a stronger analytical thinker and a more intentional emerging professional. I now have a
+        clearer sense of the kind of work I want to do and the kind of value I can bring: I can assess systems, interpret evidence, engage
+        with stakeholder perspectives, and develop recommendations that are thoughtful, structured, and applicable. This portfolio reflects
+        that development. It demonstrates not just what I studied, but how the MPRTSM program helped me build a professional identity rooted
+        in planning, responsiveness, and readiness to contribute.
+      </p>
+    </section>
+
+    <p class="footer">Public ePortfolio hosted through GitHub Pages.</p>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const nav = document.querySelector("nav");
+      const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          const target = document.querySelector(targetId);
+          if (!target) return;
+
+          const navHeight = nav ? nav.offsetHeight : 0;
+          const extraSpacing = 16;
+
+          const targetTop =
+            target.getBoundingClientRect().top +
+            window.pageYOffset -
+            navHeight -
+            extraSpacing;
+
+          window.scrollTo({
+            top: targetTop,
+            behavior: "smooth"
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
